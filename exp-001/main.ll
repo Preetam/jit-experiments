@@ -1,6 +1,6 @@
 declare i32 @printf(i8* noalias nocapture, ...)
 
-@boolPrintStr = constant [4 x i8] c"%d\0A\00"
+@boolPrintStr = constant [4 x i8] c"%d\0A\00" ; C string "%d\n"
 
 ; returns 0 if (%a == 1 && %b == 2), 1 otherwise
 define i1 @check(i32 %a, i32 %b) {
